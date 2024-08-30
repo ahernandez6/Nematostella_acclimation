@@ -1,5 +1,6 @@
 # COMMANDS USED TO PERFORM READ MAPPING & METHYLATION CALLING
 
+We used the Zimmermann et al. (2023) genome as our reference genome
 ### Perform genome indexing
 ```
 bismark_genome_preparation --bowtie2 --verbose --parallel 4 01-GENOME_PREP
