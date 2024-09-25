@@ -11,5 +11,5 @@
 
 #### annotation_extraction.py
 * Script to characterize gene body DMRs
-* Counts the number of DMRs located in genes, exons, and introns
-* Produces a csv file with associated gene annotation information associated with DMRs
+* Counts the number of DMRs located within genes, exons, and introns
+* Produces a csv file with gene annotation information for DMRs on gene bodies
