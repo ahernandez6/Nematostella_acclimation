@@ -6,7 +6,7 @@ This script was used to identify differentially methylated regions for pairwise 
 For this script we input coverage output files (bismark.cov.gz) that were generated from methylation calling using Bismark
 
 Dependencies: 
-* [DSS] (https://www.bioconductor.org/packages/release/bioc/html/DSS.html)
+* [DSS](https://www.bioconductor.org/packages/release/bioc/html/DSS.html)
 * [bsseq](https://www.bioconductor.org/packages/release/bioc/html/bsseq.html)
 
 ### annotation_extraction.py
