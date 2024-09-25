@@ -10,4 +10,4 @@
 * [bsseq](https://www.bioconductor.org/packages/release/bioc/html/bsseq.html)
 
 #### annotation_extraction.py
-* Script to characterize DMRs based on gene annotations
+* Script to characterize gene body DMRs
