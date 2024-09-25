@@ -1,4 +1,4 @@
-#Scripts and files used to identify and annotate differentially methylated regions
+# Scripts and files used to identify and annotate differentially methylated regions
 
 ### dss_temp_var.R
 This script was used to identify differentially methylated regions for pairwise comparisons of DNA collected from animals acclimated to 15°C, 20°C, and 25°C.
