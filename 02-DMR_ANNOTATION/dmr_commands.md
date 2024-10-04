@@ -15,7 +15,7 @@ python annotation_extraction.py dmr_F15_v_F25_alpha_0.05.csv NV2g.20240221.gff -
 ```
 
 ## ANNOTATE TRANSPOSABLE ELEMENT DMRS
-### Create _de novo_ repeat library using [Zimmermann et al. (2023) Nematostella genome assembly](https://simrbase.stowers.org/show/Nematostella/vectensis/analysis)
+### Create _de novo_ repeat library using Zimmermann et al. (2023) _Nematostella_ genome assembly
 ```
 BuildDatabase -name "Nvec200" Nvec200.fasta
 ```
