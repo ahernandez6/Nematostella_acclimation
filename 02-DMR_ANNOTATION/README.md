@@ -14,10 +14,10 @@
 * Counts the number of DMRs located within genes, exons, and introns
 * Produces a csv file with gene annotation information for DMRs on gene bodies
 
-### transposon_extraction.py
+#### transposon_extraction.py
 * Script to characterize transposable element DMRs
 * Counts the number of DMRs located in transposable elements
 * Produces a csv file with transposable element annotation information for DMRs
 
-### Nvec200.fasta.repeat.out.edit 
+#### Nvec200.fasta.repeat.out.edit 
 * Out file from RepeatMasker used as input for transposon_extraction.py
