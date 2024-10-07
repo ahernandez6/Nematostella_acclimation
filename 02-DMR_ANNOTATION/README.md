@@ -21,3 +21,8 @@
 
 #### Nvec200.fasta.repeat.out.edit 
 * Out file from RepeatMasker used as input for transposon_extraction.py
+
+#### dmr_promoters.py 
+* Script to characterize promoter DMRs
+* Counts the number of DMRs located in promoters
+* Produces a csv file with promoter annotation information for DMRs

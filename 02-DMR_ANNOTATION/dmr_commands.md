@@ -36,3 +36,17 @@ python transposon_extraction.py dmr_F15_v_F25_alpha_0.05.csv Nvec200.fasta.repea
 ```
 
 ## ANNOTATE PROMOTER DMRS
+### Annotate promoters in the the Zimmermann et al. (2023) genome assemby
+```
+python SlicePromoters.py NV2g.20240221.gff Nvec200.fasta 1000 Nvec200.slicepromoter.out
+```
+### Convert output to bed file
+```
+python json_to_bed.py promoters_1000.txt promoters_1000.bed
+```
+### Identify and count DMRs that are in promoters
+```
+python dmr_promoters.py dmr_F15_v_F20_alpha_0.05.csv promoters_1000.bed --csv --file_name dmr_promoters_F15_v_F20_alpha_0.05.csv
+python dmr_promoters.py dmr_F20_v_F25_alpha_0.05.csv promoters_1000.bed --csv --file_name dmr_promoters_F20_v_F25_alpha_0.05.csv
+python dmr_promoters.py dmr_F15_v_F25_alpha_0.05.csv promoters_1000.bed --csv --file_name dmr_promoters_F15_v_F25_alpha_0.05.csv
+```

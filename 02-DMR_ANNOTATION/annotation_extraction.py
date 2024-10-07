@@ -2,7 +2,7 @@
 
 """
 Module Name: annotation_extraction.py
-Description: This script annotates methylated regions within genes, exons, and introns.
+Description: This script annotates differentially methylated regions within genes, exons, and introns.
 Author: Alexandra M. Vargas
 Date: 2024-08-19
 Version: 1.0
@@ -40,7 +40,7 @@ def annotate_dmrs(dmr_file, gff_file):
 
 def main():
     # Set up argument parsing
-    parser = argparse.ArgumentParser(description="Annotate methylated regions")
+    parser = argparse.ArgumentParser(description="Annotate differentially methylated regions")
     parser.add_argument('dmr_file', type=str, help='Path to the dmr file')
     parser.add_argument('gff_file', type=str, help='Path to the gff file')
     # Use --csv parameter to generate a csv file of gene annotations for dmrs (includes isoforms and possible pseudogenes)
@@ -50,9 +50,9 @@ def main():
 
     # Call the function with the provided arguments
     (dmr_gene_count, dmr_exon_count, dmr_intron_count, methylated_genes)=annotate_dmrs(args.dmr_file, args.gff_file)
-    print(f"Number of methylated genes: {dmr_gene_count}")
-    print(f"Number of methylated exons: {dmr_exon_count}")
-    print(f"Number of methylated introns: {dmr_intron_count}")
+    print(f"Number of differentially methylated genes: {dmr_gene_count}")
+    print(f"Number of differentially methylated exons: {dmr_exon_count}")
+    print(f"Number of differentially methylated introns: {dmr_intron_count}")
 
     if args.csv:
         if args.file_name:

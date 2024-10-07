@@ -2,7 +2,7 @@
 
 """
 Module Name: transposon_extraction.py
-Description: This script annotates methylated regions in transposable elements.
+Description: This script annotates differentially methylated regions in transposable elements.
 Author: Alexandra M. Vargas
 Date: 2024-10-04
 Version: 1.0
@@ -43,7 +43,7 @@ def main():
 
     # Call the function with the provided arguments
     (te_df, dmr_te_count)=annotate_dmrs(args.dmr_file, args.repeat_file)
-    print(f"Number of methylated transposable elements: {dmr_te_count}")
+    print(f"Number of differentially methylated transposable elements: {dmr_te_count}")
 
     if args.csv:
         if args.file_name:
