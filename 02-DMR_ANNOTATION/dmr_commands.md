@@ -7,7 +7,7 @@ Rscript dss_temp_var.R
 ```
 
 ## ANNOTATE GENE BODY DMRS 
-We used the DMR files produced from the command above and the gff file produced from the [Zimmermann et al. (2023) gene annotations](https://simrbase.stowers.org/show/Nematostella/vectensis/analysis)
+We used the DMR files produced from the command above and the gff file produced from the [Zimmermann et al. (2023) gene annotations](https://simrbase.stowers.org/show/Nematostella/vectensis/analysis).
 ```
 python annotation_extraction.py dmr_F15_v_F20_alpha_0.05.csv NV2g.20240221.gff --csv --file_name anno_dmr_F15_v_F20_alpha_0.05_2024.csv
 python annotation_extraction.py dmr_F20_v_F25_alpha_0.05.csv NV2g.20240221.gff --csv --file_name anno_dmr_F20_v_F25_alpha_0.05_2024.csv
@@ -19,7 +19,7 @@ python annotation_extraction.py dmr_F15_v_F25_alpha_0.05.csv NV2g.20240221.gff -
 ```
 BuildDatabase -name "Nvec200" Nvec200.fasta
 ```
-### Concated RepBase database to Nvec200 de novo repeat library
+### Concatenate RepBase database to Nvec200 _de novo_ repeat library
 ```
 cat /apps/pkg/repeatmasker/4.1.2/Libraries/RepeatMasker.lib Nvec200-families.fa > RepBase.Nvec200.fa
 ```
@@ -27,3 +27,12 @@ cat /apps/pkg/repeatmasker/4.1.2/Libraries/RepeatMasker.lib Nvec200-families.fa 
 ```
 RepeatMasker -pa 14 -lib RepBase.Nvec200.fa Nvec200.fasta -a -gff -dir RepBase_Nvec200_out
 ```
+### Identify and count DMRs that are in transposable elements
+We used the DMR files produced from dss_temp_var.R and the out file from RepeatMasker. We edited the out file headings (see included file .out.edit file) to better work with our custom script.
+```
+python transposon_extraction.py dmr_F15_v_F20_alpha_0.05.csv Nvec200.fasta.repeat.out.edit --csv --file_name dmr_te_F15_v_F20_alpha_0.05.csv
+python transposon_extraction.py dmr_F20_v_F25_alpha_0.05.csv Nvec200.fasta.repeat.out.edit --csv --file_name dmr_te_F20_v_F25_alpha_0.05.csv
+python transposon_extraction.py dmr_F15_v_F25_alpha_0.05.csv Nvec200.fasta.repeat.out.edit --csv --file_name dmr_te_F15_v_F25_alpha_0.05.csv
+```
+
+## ANNOTATE PROMOTER DMRS
