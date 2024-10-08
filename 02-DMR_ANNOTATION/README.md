@@ -1,5 +1,8 @@
 # Scripts and files used to identify and annotate differentially methylated regions
 
+#### dmr_commands.md 
+* Commands used to identity and annotate differentially methylated genes
+
 #### dss_temp_var.R
 * Script to identify differentially methylated regions for pairwise comparisons of DNA collected from animals acclimated to 15°C, 20°C, and 25°C
 
