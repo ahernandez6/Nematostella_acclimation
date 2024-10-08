@@ -10,5 +10,4 @@ python prep_GO_input.py anno_dmr_F15_v_F25_alpha_0.05_2024.csv NV20240221.GO.csv
 ```
 
 ### Run GO_MWU
-* GO_MWU_temp.R
-This script must be run in RStudio. All dependencies indicated on [https://github.com/z0on/GO_MWU](https://github.com/z0on/GO_MWU) must be downloaded prior to running the script. The input should be changed to each of the output files produced from the commands above.
+GO_MWU_temp.R - This script must be run in RStudio. All dependencies indicated on [https://github.com/z0on/GO_MWU](https://github.com/z0on/GO_MWU) must be downloaded prior to running the script. The input should be changed to each of the output files produced from the commands above.
