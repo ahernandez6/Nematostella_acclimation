@@ -1,4 +1,5 @@
 # Nematostella_acclimation
+### Summary
 To acclimate to shifting environments, individuals must modulate their phenotypic responses to match their surroundings. DNA methylation, a chemical modification where methyl groups are added to nucleotides, has been hypothesized to alter gene expression in response to the environment, assisting in acclimatization. However, reports on the correlation between DNA methylation and gene expression have varied depending on exposure time and types of environmental stressors individuals have been challenged with. For our study, we aimed to investigate the long-term impacts of temperature variation on DNA methylation and gene expression using the sea anemone _Nematostella vectensis_. We acclimated clonal lines of _Nematostella_ to low, medium, and high temperatures (15, 20, and 25 degrees C) for a period of 76 weeks and analyzed differences in methylation and gene expression.
 
 ### 01-METHYLATION_CALLING
