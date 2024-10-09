@@ -1,4 +1,4 @@
-# Scripts and files used to perform correlation analysis on differentially methylated and expressed genes
+# Commands, scripts, and files used to perform correlation analysis on differentially methylated and expressed genes
 
 #### correlation_commands.md
 * Commands used to perform correlation analysis for changes in gene methylationa nd expression under different temperature treatments

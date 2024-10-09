@@ -1,4 +1,4 @@
-# Scripts and files used to perform GO enrichment analyses on differentially methylated genes
+# Commands and scripts used to perform GO enrichment analyses on differentially methylated genes
 
 #### GO_enrichment_commands.md
 * Commands used to perform GO enrichment analyses on differentially methylated genes

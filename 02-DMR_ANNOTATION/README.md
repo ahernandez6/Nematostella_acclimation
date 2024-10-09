@@ -1,4 +1,4 @@
-# Scripts and files used to identify and annotate differentially methylated regions
+# Commands scripts and files used to identify and annotate differentially methylated regions
 
 #### dmr_commands.md 
 * Commands used to identity and annotate differentially methylated genes
