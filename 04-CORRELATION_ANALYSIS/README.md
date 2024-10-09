@@ -5,6 +5,7 @@
 
 #### overlapping_dmr_dge.py
 * Custom script that prepares a matrix consisting of difference measures for differentially methylated and expressed genes
+* This matrix is used as input for correlation_dmr_dge.R
 
 #### correlation_dmr_dge.R
 * Custom script to perform correlation analysis on differentially methylated and expressed genes
